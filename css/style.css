@@ -72,12 +72,44 @@ img{
     50% { opacity: 0.1;} 
     100% { opacity: 1;}
 }
+.ani{
+    animation: zoomin 1s ease-in-out 0s;
+}
+@keyframes zoomin {
+    0% {transform: scale (0);
+        
+    }
+    25% {transform: scale (1);
+        
+    }
+    50% {transform: scale (2);} 
+    100% {transform: scale (1);}
+}
 .second_butt{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 90px;
+    animation: myframes 2s ease-in-out 0s
+}
+@keyframes myframes {
+    0%{
+        transform: translate(-10%, -50%);
+        opacity: 0.1;
+    }
+    25%{
+        transform: translate(-20%, -50%);
+        opacity: 0.4;
+    }
+    50%{
+        transform: translate(-35%, -50%);
+        opacity: 0.8;
+    }
+    100%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
 }
 .topImage img{
     height: 50px; width: 150px;
