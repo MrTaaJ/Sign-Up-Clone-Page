@@ -82,46 +82,27 @@ img{
 }
 .second_butt{
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
-    /*transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
     margin-top: 90px;
-    animation: myframes 2s ease-in-out 0s
-}
-.btt1{
-    
+    animation: myframes 2s ease-in-out 2s
 }
 @keyframes myframes {
     0%{
-        transform: translate(-10%, -0%);
-        opacity: 0;
-    }
-    15%{
-        transform: translate(-10%, -0%);
-        opacity: 0;
+        transform: translate(-10%, -50%);
+        opacity: 0.1;
     }
     25%{
-        transform: translate(-10%, -0%);
-        opacity: 0;
-    }
-    35%{
-        transform: translate(-10%, -0%);
-        opacity: 0.4;
-    }
-    45%{
-        transform: translate(-20%, -0%);
+        transform: translate(-20%, -50%);
         opacity: 0.4;
     }
     50%{
-        transform: translate(-30%, -0%);
-        opacity: 0.8;
-    }
-    75%{
-        transform: translate(-40%, -0%);
+        transform: translate(-35%, -50%);
         opacity: 0.8;
     }
     100%{
-        transform: translate(-50%, -0%);
+        transform: translate(-50%, -50%);
         opacity: 1;
     }
 }
@@ -274,10 +255,10 @@ img{
     color: #0077C5;
     background-color: white;
     padding: 15px;
-    cursor: pointer;
 }
 .footer a{
     text-decoration: none;
+    cursor: pointer;
 }
 .footer a:hover{
     text-decoration: underline;
