@@ -1,3 +1,6 @@
+:root{
+    --middleborder: rgba(2, 17, 9, 0.28);
+}
 * {
     margin: 0;
     padding: 0;
@@ -72,49 +75,55 @@ img{
     50% { opacity: 0.1;} 
     100% { opacity: 1;}
 }
-.ani{
-    animation: zoomin 1s ease-in-out 0s;
-}
-@keyframes zoomin {
-    0% {transform: scale (0);
-        
-    }
-    25% {transform: scale (1);
-        
-    }
-    50% {transform: scale (2);} 
-    100% {transform: scale (1);}
-}
-.second_butt{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 90px;
-    animation: myframes 2s ease-in-out 0s
-}
-@keyframes myframes {
-    0%{
-        transform: translate(-10%, -50%);
-        opacity: 0.1;
-    }
-    25%{
-        transform: translate(-20%, -50%);
-        opacity: 0.4;
-    }
-    50%{
-        transform: translate(-35%, -50%);
-        opacity: 0.8;
-    }
-    100%{
-        transform: translate(-50%, -50%);
-        opacity: 1;
-    }
-}
 .topImage img{
     height: 50px; width: 150px;
     background-color: #ECEEF1;
     opacity: 0.5;
+}
+.second_butt{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/
+    margin-top: 90px;
+    animation: myframes 2s ease-in-out 0s
+}
+.btt1{
+    
+}
+@keyframes myframes {
+    0%{
+        transform: translate(-10%, -0%);
+        opacity: 0;
+    }
+    15%{
+        transform: translate(-10%, -0%);
+        opacity: 0;
+    }
+    25%{
+        transform: translate(-10%, -0%);
+        opacity: 0;
+    }
+    35%{
+        transform: translate(-10%, -0%);
+        opacity: 0.4;
+    }
+    45%{
+        transform: translate(-20%, -0%);
+        opacity: 0.4;
+    }
+    50%{
+        transform: translate(-30%, -0%);
+        opacity: 0.8;
+    }
+    75%{
+        transform: translate(-40%, -0%);
+        opacity: 0.8;
+    }
+    100%{
+        transform: translate(-50%, -0%);
+        opacity: 1;
+    }
 }
 .butt2{
     display: inline-flex;
@@ -130,19 +139,146 @@ img{
 .butt__text2{
     opacity: 0.5;
 }
-
+.ani{
+    animation: zoomin 1s ease-in-out 0s;
+}
+@keyframes zoomin {
+    0% {transform: scale(0);
+        
+    }
+    25% {transform: scale(1);
+        
+    }
+    50% {transform: scale(2);} 
+    100% {transform: scale(1);}
+}
 
 /*-- MIDDLE PART FORM PHASE --*/
 
 .middle{
-    position: relative;
-    width: 40%;
+    position: absolute;
+    width: 400px;
+    top: 420px;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin-top: 70px;
+    margin-bottom: 50px;
     background-color: white;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: var(--middleborder) 1px solid;
+    
+}
+.middleText{
     text-align: center;
-    padding: 30px 15px;
-    border: black solid 1px;
-    margin: 70px 30%;
 }
 .middleText h2{
     padding-bottom: 20px;
+    font-weight: 200;
+}
+.input-container{
+    padding: 15px;
+}
+.input-container label{
+    text-align: left;
+}
+.fname{
+    display: block;
+    width: 99%;
+    height: 35px;
+    padding: 5px;
+    margin-top: 13px;
+}
+#reco{
+    opacity: 0.7;
+}
+.smallText{
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+.botbutt{
+    display: inline-flex;
+    width: 80%;
+    padding: 0 10px;
+    color: white;
+    background-color: #0077C5;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 200;
+    align-items: center;
+}
+.botbutt__icon{
+    font-size: 30px;
+    padding-left: 50px;
+}
+.botbutt__text{
+    padding-right: 10px;
+    padding-left: 20px;
+}
+.botbutt:active{
+    background-color: #006ab1;
+}
+.conText{
+    text-align: center;
+    margin: 20px;
+    font-style: italic;
+    font-size: 0.9em;
+    line-height: 20px;
+}
+.middleBot{
+    height: 50px;
+    width: 398px;
+    background-color: #ECEEF1;
+    margin-left: -15px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+.middleBot a{
+    color:#0077C5;
+    opacity: 1;
+}
+.Bottom{
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 15px;
+    display: none;
+}
+.lastMid1 ul {
+    list-style-type: none;
+    padding: 10px;
+}
+.lastMid1 li{
+    display: inline;
+    padding-right: 8px;
+}
+.lastMid1 a{
+    text-decoration: none;
+    float: center;
+}
+.lastMid1 a:hover{
+    text-decoration: underline;
+}
+.footer{
+    height: 50px;
+    display: block;
+    color: #0077C5;
+    background-color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
 }
