@@ -167,6 +167,16 @@ img{
 .input-container label{
     text-align: left;
 }
+.text-align{
+    display: flex;
+    float: right;
+    background-color: #404040;
+    width: 200px;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font: 400 0.85em "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
 .fname{
     display: block;
     width: 99%;
