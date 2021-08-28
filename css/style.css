@@ -82,28 +82,28 @@ img{
 }
 .second_butt{
     position: absolute;
-    margin-left: 36%;
-    margin-top: 120px;
-}
-.btt1, .btt2, .btt3{
     animation: myframes 2s ease-in-out 1s;
-    margin-left: 200px;
+    margin-top: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 @keyframes myframes {
     0%{
-        transform: translate(-10%);
-        opacity: 1;
+        transform: translate(-10%, -50%);
+        opacity: 0;
     }
     25%{
-        transform: translate(-10%);
+        transform: translate(-10%, -50%);
         opacity: 0;
     }
     50%{
-        transform: translate(-35%);
+        transform: translate(-35%, -50%);
         opacity: 0.8;
     }
     100%{
-        transform: translate(-50%);
+        transform: translate(-50%, -50%);
         opacity: 1;
     }
 }
