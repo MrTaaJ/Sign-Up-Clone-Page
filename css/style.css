@@ -168,7 +168,7 @@ img{
     text-align: left;
 }
 .text-align{
-    display: flex;
+    display: none;
     float: right;
     background-color: #404040;
     width: 200px;
@@ -176,6 +176,7 @@ img{
     padding: 10px;
     border-radius: 4px;
     font: 400 0.85em "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+
 }
 .fname{
     display: block;
